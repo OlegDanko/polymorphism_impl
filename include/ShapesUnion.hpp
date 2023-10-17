@@ -1,6 +1,6 @@
 #pragma once
 
-#include "BasicShapes.hpp"
+#include <BasicShapes.hpp>
 #include <algorithm>
 
 enum class EShape {

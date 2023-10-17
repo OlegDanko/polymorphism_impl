@@ -1,15 +1,15 @@
-#include "ShapesVirtual.hpp"
+#include <ShapesVirtual.hpp>
 #include <iostream>
 
 CircleShape::CircleShape(const Circle &circle) : shape(circle) {}
 
-float CircleShape::area() {
+float CircleShape::area() const {
     return ::area(shape);
 }
 
 AARectShape::AARectShape(AARect rect) : shape(rect) {}
 
-float AARectShape::area() {
+float AARectShape::area() const {
     return ::area(shape);
 }
 

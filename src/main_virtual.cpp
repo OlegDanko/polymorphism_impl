@@ -1,7 +1,7 @@
 #include <iostream>
 #include <chrono>
-#include "ShapesMaker.hpp"
-#include "ShapesVirtual.hpp"
+#include <ShapesMaker.hpp>
+#include <ShapesVirtual.hpp>
 
 int main() {
     auto start = std::chrono::steady_clock::now();

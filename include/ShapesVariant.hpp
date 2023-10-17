@@ -1,7 +1,6 @@
 #pragma once
 
-#include "BasicShapes.hpp"
-
+#include <BasicShapes.hpp>
 #include <variant>
 #include <algorithm>
 

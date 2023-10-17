@@ -1,4 +1,4 @@
-#include "BasicShapes.hpp"
+#include <BasicShapes.hpp>
 
 float dist_sqr(const Point &a, const Point &b) {
     return dist_sqr(a.x, a.y, b.x, b.y);

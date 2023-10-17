@@ -1,4 +1,4 @@
-#include "ShapesUnion.hpp"
+#include <ShapesUnion.hpp>
 
 float area(const ShapeUnion &shape) {
     switch(shape.e_shape) {
