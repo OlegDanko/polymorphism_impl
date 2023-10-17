@@ -29,7 +29,7 @@ bool collide(const Circle &c, const AARect &r) {
     bool left = c.pos.x < r.pos_bottom_left.x;
     bool right = c.pos.x > r.pos_top_right.x;
     bool below = c.pos.y < r.pos_bottom_left.y;
-    bool above = c.pos.y > r.pos_bottom_left.y;
+    bool above = c.pos.y > r.pos_top_right.y;
 
     if(left) {
         if(below)
