@@ -16,6 +16,18 @@ struct ShapeUnion {
     } shape;
 };
 
+template<typename S>
+bool collide(const ShapeUnion& shape, const S& s) {
+    switch(shape.e_shape) {
+    case EShape::CIRCLE:
+        return collide(s, shape.shape.circle);
+    case EShape::AARECT:
+        return collide(s, shape.shape.rect);
+    default:
+        return {};
+    }
+}
+
 float area(const ShapeUnion& shape);
 
 ShapeUnion make_circle_union(float x, float y, float r);

@@ -5,10 +5,10 @@
 
 int main() {
     auto start = std::chrono::steady_clock::now();
-    auto shapes = make_shapes(1000000, make_circle, make_aa_square);
+    auto shapes = make_shapes(100000, make_circle, make_aa_square);
     auto loop = std::chrono::steady_clock::now();
 
-    for(int i = 0; i < 100; i++)
+    for(int i = 0; i < 1000; i++)
     for(auto& s : shapes)
         s->area();
 
