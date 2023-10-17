@@ -1,11 +1,11 @@
 #include "ShapesVirtual.hpp"
+#include <iostream>
 
 CircleShape::CircleShape(const Circle &circle) : shape(circle) {}
 
 float CircleShape::area() {
     return ::area(shape);
 }
-
 
 AARectShape::AARectShape(AARect rect) : shape(rect) {}
 

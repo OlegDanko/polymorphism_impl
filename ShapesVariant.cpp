@@ -1,16 +1,5 @@
 #include "ShapesVariant.hpp"
 
-float area(const ShapeVariant_t &shape) {
-    switch(shape.index()) {
-    case 0:
-        return area(std::get<0>(shape));
-    case 1:
-        return area(std::get<1>(shape));
-    default:
-        return {};
-    }
-}
-
 ShapeVariant_t make_circle_variant(float x, float y, float r) {
     return {Circle{x, y, r}};
 }
