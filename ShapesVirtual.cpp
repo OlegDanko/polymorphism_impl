@@ -1,4 +1,4 @@
-#include "ShapesPolymorphism.hpp"
+#include "ShapesVirtual.hpp"
 
 CircleShape::CircleShape(const Circle &circle) : shape(circle) {}
 

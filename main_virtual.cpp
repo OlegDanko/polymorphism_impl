@@ -1,16 +1,16 @@
 #include <iostream>
 #include <chrono>
 #include "ShapesMaker.hpp"
-#include "ShapesVariant.hpp"
+#include "ShapesVirtual.hpp"
 
 int main() {
     auto start = std::chrono::steady_clock::now();
-    auto shapes = make_shapes(1000000, make_circle_variant, make_aa_rect_variant);
+    auto shapes = make_shapes(1000000, make_circle, make_aa_square);
     auto loop = std::chrono::steady_clock::now();
 
     for(int i = 0; i < 100; i++)
     for(auto& s : shapes)
-        area(s);
+        s->area();
 
     auto done = std::chrono::steady_clock::now();
 
