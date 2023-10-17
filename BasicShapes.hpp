@@ -14,7 +14,7 @@ struct Point {
     float x, y;
 };
 
-auto dist_sqr(const Point& a, const Point& b);
+float dist_sqr(const Point& a, const Point& b);
 
 struct Circle {
     Point pos;
